@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            every : tất cả
+            tức là tất cả các phần tử trong mảng phải thỏa mãn điều kiện 
+            kết quả trả về true/false
+        */
+       let numbers = [5,7,9,11,45];
+    //    kiểm tra xem trong numbers này các phần tử có phải lớn hơn 5 ko
+    // let result = numbers.every((item,index,arr)=>{
+    //     return item>5
+    // })
+    // console.log("result",result);
+
+    let student = [
+        {
+            name:"mai",
+            gender:"male",
+            address:"hn"
+        },
+        {
+            name:"nam",
+            gender:"female",
+            address:"hn"
+        },
+        {
+            name:"ngoc",
+            gender:"female",
+            address:"hn"
+        },
+    ]
+    // 1.tất cả phần tử trong student có phải nam ko?
+    // 2.tất cả học sinh đều ở hn phải ko?
+    let result= student.every((item,index,arr)=>{
+        return item.address==="hn"
+    })
+    console.log(result);
+    let result1= student.every((item,index,arr)=>{
+        return item.gender==="female"
+    })
+    console.log(result1);
+    </script>
+</body>
+</html>

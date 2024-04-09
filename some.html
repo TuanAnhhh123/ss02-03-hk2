@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        */
+       let account = [
+        {
+            name:"minh",
+            passwork:"123456",
+            address:"hà nội"
+        },
+        {
+            name:"minh",
+            passwork:"123555",
+            address:"ninh bình"
+        },
+        {
+            name:"minh",
+            passwork:"123555",
+            address:"hcm"
+        }
+       ]
+    //    kiểm tra xem trong mảng account có đối tượng mà ở ninh bình hay ko ?
+    let result =account.some((item,index,arr)=>{
+        return item.address =="ninh bình"
+    })
+    console.log(result);
+    </script>
+</body>
+</html>
